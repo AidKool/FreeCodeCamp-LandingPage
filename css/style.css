@@ -1,0 +1,197 @@
+html, body {
+  min-width: 334px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#header {
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-rows: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#header #logo {
+  width: 300px;
+  height: auto;
+  grid-area: logo;
+}
+
+#logo img {
+  width: 70%;
+  height: auto;
+}
+
+#header nav {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  grid-area: nav;
+  font-size: 1.25rem;
+}
+
+#header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#header a:link {
+  text-decoration: none;
+  color: black;
+}
+
+#main-image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#main-image img {
+  width: 100%;
+  height: auto;
+}
+
+#contact * {
+  display: block;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#features {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 20% auto;
+  grid-template-rows: auto;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+#features .icon {
+  grid-column: 1 /span 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 125px;
+  padding: 0 30px;
+}
+
+#features i {
+  box-sizing: border-box;
+  font-size: 48px;
+  color: #FF7E00;
+}
+
+#features .description {
+  grid-column: 2 /span 1;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.description h3 {
+  font-size: 1.55rem;
+}
+
+.description p {
+  font-size: 1.25rem;
+}
+
+#video-row {}
+
+#offers-row {}
+
+footer {}
+
+@media only screen and (max-width: 559px) {
+  #header {
+    flex-direction: column;
+  }
+  .video-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .video-container {
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 599px) {}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (max-width: 770px) {
+  #header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "nav";
+  }
+  #header #logo {
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav-link {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+  #header {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "logo nav";
+  }
+  .nav-link {
+    display: inline;
+  }
+  #header nav {
+    display: flex;
+    align-items: center;
+  }
+  #header nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+  }
+  .nav-link {
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  nav li:last-of-type {
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #features {
+    width: 1000px;
+  }
+}
