@@ -115,11 +115,55 @@ html, body {
   font-size: 1.25rem;
 }
 
-#video-row {}
+#video-row {
+  display: flex;
+  justify-content: center;
+}
 
-#offers-row {}
+#offers-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-auto-rows: auto;
+  justify-content: center;
+}
+
+.offer {
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #77ff62;
+  height: 40px;
+  width: 100%;
+}
+
+.offer-header h4 {
+  font-size: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.offer-body {
+  width: 100%;
+  height: auto;
+}
+
+.offer-body>p, .offer-body>h5 {
+  text-align: center;
+}
 
 footer {}
+
+.btn {
+
+}
 
 @media only screen and (max-width: 559px) {
   #header {
@@ -184,7 +228,6 @@ footer {}
     margin: 0;
     padding: 0 20px;
   }
-
   nav li:last-of-type {
     padding-right: 0 !important;
   }
@@ -193,5 +236,11 @@ footer {}
 @media only screen and (min-width: 1000px) {
   #features {
     width: 1000px;
+  }
+  #offers-row {
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: auto;
+    grid-column-gap: 2%;
+    justify-content: space-evenly;
   }
 }
