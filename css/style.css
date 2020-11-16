@@ -15,6 +15,7 @@ html, body {
 }
 
 #header {
+  background: #FFFFFF;
   display: grid;
   grid-auto-rows: auto;
   width: 80%;
@@ -24,18 +25,18 @@ html, body {
   z-index: 1;
 }
 
-#header #logo {
+#logo {
   width: auto;
   height: auto;
   grid-area: logo;
 }
 
-#logo img {
+#header-img {
   width: 150px;
   height: auto;
 }
 
-#header nav {
+#nav-bar {
   background: #FFFFFF;
   display: flex;
   align-items: center;
@@ -263,37 +264,25 @@ small a:link, small a:visited, small a:hover {
   margin-top: 25px;
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 769px) {
   #header {
     flex-direction: column;
-  }
-  .video-container {
     width: 100%;
   }
 }
-
-@media only screen and (min-width: 560px) {
-  .video-container {
-    width: 560px;
-  }
-}
-
-@media only screen and (max-width: 599px) {}
-
-@media only screen and (min-width: 600px) {}
 
 @media only screen and (max-width: 770px) {
   #header {
     grid-template-columns: 1fr;
     grid-template-areas: "logo" "nav";
   }
-  #header #logo {
+  #logo {
     margin: 0 auto;
   }
-  nav {
+  #nav-bar {
     width: 100%;
   }
-  nav ul {
+  #nav-bar ul {
     margin: 0 auto;
     text-align: center;
   }
@@ -310,11 +299,11 @@ small a:link, small a:visited, small a:hover {
   .nav-link {
     display: inline;
   }
-  #header nav {
+  #nav-bar {
     display: flex;
     align-items: center;
   }
-  #header nav>ul {
+  #nav-bar>ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
@@ -333,7 +322,7 @@ small a:link, small a:visited, small a:hover {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1150px) {
   #features, #offers-row, footer {
     width: 1000px;
   }
