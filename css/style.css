@@ -11,6 +11,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 #header {
@@ -52,7 +53,7 @@ html, body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 70px;
 }
 
 #main-image img {
@@ -101,7 +102,7 @@ html, body {
 
 #features i {
   font-size: 48px;
-  color: #FF7E00;
+  color: #A8AC0D;
 }
 
 #features .description {
@@ -140,15 +141,17 @@ html, body {
   width: 300px;
   height: auto;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .offer-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E97904;
+  background-color: #A8AC0D;
   height: 40px;
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .offer-header h4 {
@@ -187,7 +190,7 @@ html, body {
 }
 
 .btn:hover {
-  background-color: #E97904;
+  background-color: #E76726;
 }
 
 .offer .btn {
@@ -204,7 +207,7 @@ footer {
 
 footer ul {
   list-style-type: none;
-  padding: 10px 0;
+  padding: 10px 0 15px 0;
 }
 
 footer ul li {
@@ -244,7 +247,7 @@ footer ul li {
 }
 
 .copyright-row>small {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .copyright-row a:link {
